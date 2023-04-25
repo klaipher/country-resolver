@@ -22,7 +22,7 @@ class CountryInfoAPI:
             del self.session
 
 
-def main():
+def main() -> None:
     country_api_client = CountryInfoAPI()
     country_name = input("Enter the country's name:")
     country_info = country_api_client.get_country_info(country_name.strip())
